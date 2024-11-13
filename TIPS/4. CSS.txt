@@ -1,0 +1,74 @@
+Basic syntax
+
+selector {
+	property: value;
+}
+
+Universal selector	"*" - all elements
+Type selectors 		"element" - spesific element 
+Class selectors		".class_name" - specific class
+ID selectors		"#ID_name"
+
+The grouping selector
+.class_name
+.class_name {
+	property: value;
+}
+
+Chaining selectors
+.class_name#ID_name.class_name {
+	property: value;
+}
+
+Descendant combinator - urcite iba cestu k poslednemu selektoru
+.class_name .class_name {
+	property: value;
+}
+
+
+Properties to get started
+
+color: red;
+background-color: blue;
+
+hex - color: #1100ff;
+rgb - color: rgb(100, 0, 127);
+hsl - color: hsl(15, 82%, 56%);
+
+https://www.w3schools.com/cssref/css_colors_legal.php
+
+
+Typography basics and text-align
+
+font-family: "Times New Roman", serif; - pismo
+font-size: 22px; - velkost pisma
+font-weight: bold/100-900; - hrubka
+text-align: center; - centrujes text
+
+
+Image height and width
+img{
+	heght: auto;
+	width: 500px;
+}
+
+Adding CSS to HTML
+
+External CSS - External CSS is the most common method
+<head>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+Internal CSS - CSS within the HTML file itself
+<head>
+	<style>
+		selector {
+			property: value;
+		}
+	</style>
+</head>
+
+Inline CSS
+<body>
+  <div style="color: white; background-color: black;">...</div>
+</body>
