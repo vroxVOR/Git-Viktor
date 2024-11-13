@@ -1,0 +1,28 @@
+<p></p> - Paragraf
+
+Nadpis podla dolezitosti
+<h1>This is a heading 1</h1>
+<h2>This is a heading 2</h2>
+<h3>This is a heading 3</h3>
+<h4>This is a heading 4</h4>
+<h5>This is a heading 5</h5>
+<h6>This is a heading 6</h6>
+
+Hrube 
+<strong></strong>
+
+Pisane
+<em></em>
+
+Rozdiel kde pouzivat ake tagy na text.
+https://scribe.rip/@zac_heisey/when-to-use-strong-b-em-and-i-tags-in-your-markup-fa4d0af8affb
+
+
+Coment
+<!-- and -->
+Mac Users: Cmd + /
+Windows and Linux Users: Ctrl + /
+
+
+Random text 
+https://www.lipsum.com/

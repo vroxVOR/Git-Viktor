@@ -1,0 +1,37 @@
+List items 
+<li></li>
+
+
+
+Unordered lists
+<ul>
+	<li></li>
+	<li></li>
+	<li></li>
+</ul>
+
+Ordered lists
+<ol>
+	<li></li>
+	<li></li>
+	<li></li>
+</ol>
+
+
+Priklad Kombinacie 
+    <ul>
+        <li>List</li>
+        <li>Nakup
+            <ol>
+                <li>Paradajky</li>
+                <li>Kofola
+                    <ul>
+                        <li>Mala</li>
+                        <li>Velka</li>
+                    </ul>
+                </li>
+                <li>Jablko</li>
+            </ol>
+        </li>
+        <li>Benzin</li>
+    </ul>

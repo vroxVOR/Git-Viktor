@@ -1,0 +1,53 @@
+Vytvorenie linku 
+
+Anchor elements, 
+<a href="#" target="#" rel="#"> </a>
+
+href="#" LINK
+target="#" 	"_blank" otvori tab v novom okne
+		"_self" v terazjom okne. 
+Automaticky v nepritomnoti dava "_self"	
+
+rel="" 	noopener
+	noreferrer
+
+Priklad. Pouziva sa ked stranku otvaras v novom okne. 
+rel="noopener noreferrer"
+
+Ak potrebuješ iba zabezpečiť, aby otvorená stránka nemala prístup
+k tvojej stránke, stačí "noopener".
+
+Ak chceš okrem toho aj skryť informáciu o tvojej stránke ako zdroji odkazu,
+použi noreferrer, ktorý zahŕňa aj správanie noopener.	
+
+
+Absolute links
+scheme://domain/path
+<a href="https://www.theodinproject.com/about">About The Odin Project</a>
+
+
+Relative links
+about.html
+<a href="about.html">About</a>
+
+Priklad
+<p> Toto je nejaky texkt na <a href="https://audi.com"> strane </a> ktore som si 
+nupil a mozes ju vidieet na daldej<a href="stranadva.html"> stranke </a>
+
+
+Obrazky
+<img src="#" alt="Text" height="310" width="310">
+
+src="#" - Link na obrazok
+alt="Text" - text pre nevidiacich 
+height="310" - Vyska v pixeloch
+width="310" - Sirka v pixeloch
+
+JPGs
+good fot photos 
+
+GIFs
+Animations
+
+PNGs
+
