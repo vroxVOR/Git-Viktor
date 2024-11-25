@@ -1,0 +1,42 @@
+Understanding Errors
+
+
+1. Tri hlavné druhy JavaScript chýb
+
+a. SyntaxError -Vzniká, keď kód porušuje pravidlá syntaxe JavaScriptu.
+b. ReferenceError - Nastane, keď sa pokúšaš použiť premennú alebo funkciu, ktorá nie je definovaná.
+c. TypeError - Vzniká, keď sa pokúšaš vykonať operáciu na nevhodnom dátovom type.
+
+
+
+2. Časti chybovej správy, ktoré pomáhajú nájsť zdroj chyby
+
+Typ chyby:
+Napríklad SyntaxError, ReferenceError alebo TypeError. Pomáha ti pochopiť, aký druh problému nastal.
+
+Cesta k chybe (stack trace):
+Stack trace zobrazuje presné miesto, kde kód zlyhal, vrátane názvu súboru, riadku a stĺpca:
+Uncaught ReferenceError: neexistujucaPremenna is not defined
+    at script.js:2:13
+
+script.js označuje názov súboru.
+2:13 znamená, že chyba je na druhom riadku, trinástom stĺpci.
+
+
+3. Ako vyhľadávať a riešiť chyby
+Analyzuj chybovú správu:
+Najskôr si pozri typ chyby a presné miesto, kde nastala. 
+
+Vyhľadávaj chybu:
+Ak nerozumieš chybe, skús ju skopírovať a vyhľadať v prehliadači alebo na stránkach ako Stack Overflow.
+
+Používaj debugger
+
+Prekontroluj základné veci
+Máš všetky potrebné premenné definované?
+Sú funkcie volané s vhodnými argumentmi?
+Nezabudol si niekde interpunkčné znaky (napríklad ;, })?
+
+Konzolové výpisy
+Používaj console.log() na zobrazenie hodnôt premenných alebo na kontrolu, či určitá časť kódu vôbec beží.
+

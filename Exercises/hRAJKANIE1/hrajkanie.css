@@ -1,0 +1,164 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+.Hero{
+    display: flex;
+    justify-content: space-around;
+    background-color: #1F2937;
+    align-items: center;
+    padding: 10px;
+}
+
+.headerlogo{
+    color: #F0FAF8;
+    font-size: 24px;
+    font-weight: 800;
+    font-family: "Roboto", serif;
+}
+
+.menu{
+    display: flex;
+    gap: 20px;
+}
+
+.menu li a{
+    color: white;
+    font-family: "Roboto", serif;
+}
+
+
+.Hero1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 120px 20px 120px 20px;
+    background-color: #1F2937;
+    gap: 120px;
+
+}
+
+.hero_left{
+    max-width: 500px;
+}
+
+.hero_left h1{
+    color: white;
+    font-size: 48px;
+    font-family: "Roboto", serif;
+    font-weight: 900;
+    word-wrap: break-word;
+}
+
+.hero_left p{
+    color: white;
+    font-family: "Roboto", serif;
+}
+
+.CTA{
+    background-color: #3882F6;
+    font-size: 18px;
+    border-radius: 12px;
+    color: white;
+    padding: 4px 20px;
+    border: 0px;
+    margin-top: 10px;
+    font-weight: 500;
+    font-family: "Roboto", serif;
+}
+
+.Hero2{
+    margin: 80px 0px 150px 0px;
+}
+
+.Hero2 h2{
+    text-align: center;
+    margin: 0px 0px 30px 0px;
+    font-size: 36px;
+    font-family: "Roboto", serif;
+    font-weight: 900;
+}
+
+.Hero2_1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.Hero2_1_1{
+    max-width: 200px;
+    max-height: 200px;
+    text-align: center;
+}
+
+.Hero2_1_1_same4{
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    border: #3882F6 3px solid;
+}
+
+
+.Hero3{
+    background-color: lightgrey;
+    display: flex;
+    padding: 150px 300px;
+    flex-direction: column;
+}
+
+
+.Hero3_1{
+    font-style: italic;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.Hero3_2{
+    text-align: right;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.Hero4{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 160px;
+    background-color: #3882F6;
+    padding: 50px 60px;
+    border-radius: 12px;
+    margin: 100px 150px;
+}
+
+.Hero4_1 h2{
+    font-size: 36px;
+    font-weight: bold;
+    font-family: "Roboto", serif;
+}
+
+.Hero4_2_1{
+    background-color: transparent;
+    border: #F0FAF8 2px solid;
+    border-radius: 12px;
+    font-size: 26px;
+    color: white;
+    font-family: "Roboto", serif;
+    padding: 10px 20px;
+}
+
+.footer{
+    background-color: #1F2937;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer p{
+    font-family: "Roboto", serif;
+    color: white;
+    font-size: 20px;
+}

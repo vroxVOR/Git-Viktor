@@ -1,0 +1,143 @@
+AI Data Types and Conditionals
+
+1. Akých je osem dátových typov v JavaScripte?
+JavaScript má 8 dátových typov:
+
+String – Textový reťazec, napr. "ahoj".
+Number – Číselný typ (celé čísla a desatinné čísla), napr. 42, 3.14.
+Boolean – Logická hodnota true (pravda) alebo false (nepravda).
+Undefined – Hodnota, ktorá označuje, že premenná ešte nebola inicializovaná.
+Null – Hodnota, ktorá predstavuje „nič“ alebo neexistujúcu hodnotu.
+BigInt – Typ pre veľké celé čísla, ktoré presahujú limit dátového typu Number.
+Symbol – Unikátne identifikátory pre objekty.
+Object – Zložený dátový typ, ktorý obsahuje viacero vlastností alebo metód (napr. pole, funkcia)
+
+2.  Ktorý dátový typ NIE JE primitívny?
+Object je jediný ne-primitívny typ.
+Všetky ostatné (String, Number, Boolean, Undefined, Null, BigInt, Symbol) sú primitívne typy.
+
+typeof undefined // "undefined"
+typeof 0 // "number"
+typeof 10n // "bigint"
+typeof true // "boolean"
+typeof "foo" // "string"
+typeof Symbol("id") // "symbol"
+typeof Math // "object"  (1)
+typeof null // "object"  (2)
+typeof alert // "function"  (3)
+
+3. Aký je vzťah medzi null a undefined?
+null: Znamená „nič“, t.j. úmyselne prázdna hodnota.
+Príklad: let x = null;
+
+undefined: Znamená, že premenná ešte nebola inicializovaná alebo nemá hodnotu.
+Príklad: let x;
+
+Hoci sú podobné, nie sú zameniteľné. Porovnanie null == undefined je true, ale null === undefined je false.
+
+4. Aký je rozdiel medzi jednoduchými, dvojitými a spätnými úvodzovkami pre reťazce?
+Jednoduché úvodzovky (') a dvojité úvodzovky (") sú takmer zameniteľné na vytvorenie textu:
+'Ahoj' alebo "Ahoj".
+Spätné úvodzovky (```) umožňujú:
+Viacriadkové reťazce bez použitia \n.
+Interpoláciu (vkladanie premenných a výrazov) pomocou ${}.
+
+5. Ako sa volá proces spájania reťazcov dohromady?
+const text = "Ahoj, " + "svet!";
+
+6. Ktorý typ úvodzoviek umožňuje vkladanie premenných alebo výrazov do reťazcov?
+Spätné úvodzovky (```).
+
+7. Ako vložíš premenné alebo výrazy do reťazca?
+const meno = "Viktor";
+console.log(`Ahoj, ${meno}!`);
+
+8. Ako používať escape znaky v reťazci?
+Použi spätné lomítko (\), aby si unikol špeciálny znak:
+\' pre jednoduchú úvodzovku.
+\" pre dvojitú úvodzovku.
+\n pre nový riadok.
+
+const goodQuotes1 = 'She said "I think so!"';
+const goodQuotes2 = `She said "I'm not going in there!"`;
+const bigmouth = 'I\'ve got no right to take my place…';
+const text = "Ahoj, toto je nový riadok:\nTu.";
+
+9. Aký je rozdiel medzi metódami slice a substring?
+slice(start, end): Vracia časť reťazca od indexu start po index end (bez end).
+substring(start, end): Funguje podobne, ale neakceptuje záporné hodnoty.
+
+const text = "Ahoj svet";
+console.log(text.slice(0, 4)); // "Ahoj"
+console.log(text.substring(0, 4)); // "Ahoj"
+
+
+10. Aké sú tri logické operátory a čo znamenajú?
+&& (AND): Oba výrazy musia byť true.
+|| (OR): Jeden z výrazov musí byť true.
+! (NOT): Neguje výraz.
+
+11. Aké sú porovnávacie operátory?
+=== a !==: Striktné porovnanie (berie ohľad na typ).
+== a !=: Neprísne porovnanie (neberie ohľad na typ).
+>, <, >=, <=: Väčšie, menšie, väčšie alebo rovné, menšie alebo rovné.
+
+12. Čo sú truthy a falsy hodnoty?
+Truthy: Hodnoty, ktoré sa považujú za true v logickom kontexte (napr. 1, "text").
+Falsy: Hodnoty, ktoré sa považujú za false.
+
+13. Aké sú false hodnoty v JavaScripte?
+false
+0
+"" (prázdny reťazec)
+null
+undefined
+NaN
+
+14. Čo sú podmienky (conditionals)?
+Podmienky umožňujú vykonávať kód na základe splnenia nejakej logickej podmienky.
+
+if (podmienka) {
+  // vykoná sa, ak je podmienka true
+} else {
+  // vykoná sa, ak je podmienka false
+}
+
+
+15. Aká je syntax pre podmienku if/else?
+
+if (podmienka) {
+  // kód pre true
+} else {
+  // kód pre false
+}
+
+16. Aká je syntax pre switch?
+Používa sa, keď porovnávaš jednu hodnotu proti viacerým možnostiam:
+
+switch (hodnota) {
+  case "možnosť1":
+    // kód
+    break;
+  case "možnosť2":
+    // kód
+    break;
+  default:
+    // kód pre iné prípady
+}
+
+17. Aká je syntax pre ternárny operátor?
+Skrátená forma if/else:
+
+podmienka ? "hodnota pre true" : "hodnota pre false";
+
+18. Čo je to vkladanie (nesting)?
+if (podmienka1) {
+  if (podmienka2) {
+    // vnorený kód
+  }
+}
+
+
+
+

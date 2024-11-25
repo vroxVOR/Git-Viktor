@@ -1,0 +1,100 @@
+Flexbox je veľmi silný nástroj na vytváranie komplexných dizajnov s relatívne jednoduchým kódom.
+
+Flex Container - je element, ktorý sa správa ako kontajner pre flex items
+display: flex 
+display: inline-flex
+
+.container {
+	display: flex; /* Nastavenie flex-kontajnera */
+}
+
+
+Flex Items - sú priamymi deťmi flex-kontajnera. 
+Flexbox umožňuje jednoduché a efektívne manipulovanie s ich rozložením, 
+zarovnávaním a veľkosťou v rámci kontajnera.
+
+https://internetingishard.netlify.app/html-and-css/flexbox/index.html
+https://www.youtube.com/watch?v=phWxA89Dy94
+
+
+Flex je skratka pre flex-grow, flex-shrink a flex-basis
+
+flex-grow
+flex-grow určuje, ako veľmi sa položka zväčší, ak je vo flex-kontajneri voľný priestor.
+flex-grow: 1, znamená že sa môže roztiahnuť a prijať rovnaký podiel voľného miesta, ak je k dispozícii.
+flex-grow: 2, zväčší sa dvakrát viac ako položka s flex-grow: 1.
+
+flex-shrink
+flex-shrink určuje, ako veľmi sa položka zmenší, keď nie je dostatok miesta v kontajneri.
+flex-shrink: 1, položka sa môže zmenšiť, aby sa zmestila do kontajnera. 
+flex-shrink: 0, položka sa nebude zmenšovať.
+
+flex-basis
+flex-basis určuje základnú veľkosť položky predtým, než sa začnú aplikovať hodnoty flex-grow a flex-shrink.
+počiatočná veľkosť položky (predtým, než sa začne meniť podľa voľného alebo chýbajúceho priestoru).
+Ak flex-basis je nastavené na auto, položka si zachová svoju pôvodnú veľkosť na základe jej šírky alebo výšky.
+
+flex: <flex-grow> <flex-shrink> <flex-basis>;
+
+.item {
+    flex: 1 1 200px; /* flex-grow: 1, flex-shrink: 1, flex-basis: 200px */
+}
+
+
+
+Čo je flex: auto?
+flex: auto je skratka, ktorá sa používa na nastavenie 
+flex-grow na 1, 
+flex-shrink na 1
+flex-basis na auto.
+
+Rastie (flex-grow: 1), ak je voľný priestor v kontajneri.
+Zmenšuje sa (flex-shrink: 1), ak je kontajner príliš malý.
+Má svoju základnú veľkosť určenú automaticky (flex-basis: auto), čo znamená, že sa použije jej prirodzená veľkosť na základe obsahu alebo definovaných rozmerov (napr. šírky alebo výšky).
+
+.item {
+    flex: auto; /* flex-grow: 1, flex-shrink: 1, flex-basis: auto */
+}
+
+
+Axes
+Flexbox moze fungovat vertikalne aj horizontalne podla HLAVNEHO SMERU ktory si mozme urcite
+Zakladny smer je horizontalny alebo "row" ale mozme ho nastavit aj vertilane a to je "column"
+
+.flex-container {
+  flex-direction: column;
+}
+
+Flex basis a flex-direction
+Tieto dva kody sa vedia velmi ovplivnovat. A to takto: 
+
+Ked je flex-direction nastavena na "row" (default) tak Flex basis urcite sirku 
+Ked je flex-direction nastavena na "column" tak Flex basis urcite vysku
+
+
+
+justify-content je kod ktory na pouziva na rozlozenia flex poloziek v kontajnery. Ma rozne moznosti. 
+justify-content rozlori flex polozky podla HLAVNEHO SMERU, takze ho priamo ovplivnuje "flex-direction"
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+align-items funguje na DRUHOM SMERE, takze ked chceme centrovat v tomto pripade vertikalne pouzijeme 
+"align-items: center" na hlavny kontajner tak isto ako justify-content
+
+
+Gap
+V poslednom rade mozme dat flex items priestor medzi sebou s kodom "gap" taktiez do hlavneho kontejneru. 
+gap: 8px;
+
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+flex-wrap: nowrap/wrap 
+
+Content width < Width < flex-basis < min-width/max-width
+
+
+
+aih8mmk2

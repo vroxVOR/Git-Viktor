@@ -1,0 +1,63 @@
+How to run JavaScript code
+
+Use the VS Code snippet ! + TAB
+
+<script>
+   // Your JavaScript goes here!
+   console.log("Hello, World!")
+</script>
+
+console.log() is the command to print something to the developer console
+
+external script
+<script src="javascript.js"></script>
+
+
+Variables
+variables using the "let". 
+let var_NAME = "name";
+
+"let" staci ked definujes raz potom staci uz len:
+var_NAME = "new_name";
+
+Stringy definues s "" ako "String";
+cisla definujes BEZ "" ako 52;
+
+to print it you need to use console.log command
+console.log(var_NAME)
+
+
+Nemeniaca variabilna 
+const 
+const pi = 3.14;
+pi = 10;
+console.log(pi); ========> 3.14
+
+let		which we can re-assign.
+const		which we can’t re-assign and will throw an error if we try.
+
+
+Ako premenné využiť?
+	Sledovanie skóre v hre
+	Ukladanie vstupov od používateľa
+	Výpočty alebo logika v kóde
+
+Typy hodnôt
+Čísla
+	let age = 25;
+	let price = 99.99;
+
+Text (Stringy)
+	let name = "Viktor";
+
+Boolean (pravda/nepravda):
+	let isOnline = true; // alebo false
+
+Pole (Array)
+let fruits = ["apple", "banana", "orange"];
+
+Objekty
+let person = { name: "Viktor", age: 27 };
+
+
+

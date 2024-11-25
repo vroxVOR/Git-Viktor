@@ -1,0 +1,52 @@
+Poznámky k témam z článkov o funkciách v JavaScripte
+1. Funkcie a ich rozsah (Function Scope)
+
+Scope (rozsah) určuje, kde je premenná alebo funkcia dostupná v kóde
+Globálny rozsah: 	Premenné/funkcie deklarované mimo akéhokoľvek bloku sú dostupné v celom kóde.
+Lokálny rozsah: 	Premenné deklarované vo funkcii sú dostupné iba v rámci tejto funkcie.
+
+Ak deklaruješ premennú vnútri funkcie, nemôžeš k nej pristúpiť zvonku.
+
+
+2. Hodnoty, ktoré funkcie vracajú (Return Values)
+
+function suma(a, b) {
+    return a + b;
+}
+let vysledok = suma(5, 3); // vysledok = 8
+
+Ak funkcia nemá return, automaticky vráti undefined.
+
+
+3. Funkcie s predvolenými parametrami (Default Parameters)
+
+function pozdrav(meno = "hosť") {
+    return `Ahoj, ${meno}!`;
+}
+console.log(pozdrav()); // Ahoj, hosť!
+console.log(pozdrav("Viktor")); // Ahoj, Viktor!
+
+
+4. Funkčné výrazy (Function Expressions)
+Funkcie môžu byť uložené do premenných:
+
+const pozdrav = function(meno) {
+    return `Ahoj, ${meno}!`;
+};
+console.log(pozdrav("Viktor")); // Ahoj, Viktor!
+
+Funkčné výrazy nie sú „hoisted“, čo znamená, že ich nemôžeš použiť pred ich definíciou.
+
+
+5. Šípkové funkcie (Arrow Functions)
+
+const pozdrav = (meno) => `Ahoj, ${meno}!`;
+console.log(pozdrav("Viktor")); // Ahoj, Viktor!
+
+6. Zásobník volaní (Call Stack)
+
+Call Stack je mechanizmus, ktorý prehliadač používa na sledovanie vykonávania funkcií.
+Každá volaná funkcia sa pridá na vrch zásobníka.
+Po skončení vykonávania sa funkcia odstráni zo zásobníka.
+
+

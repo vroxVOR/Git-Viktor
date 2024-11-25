@@ -1,0 +1,19 @@
+Problem Solving
+
+
+three steps in the problem solving process
+
+Understand the problem
+The first step to solving a problem is understanding exactly what the problem is.
+If you don’t understand the problem, you won’t know when you’ve successfully
+solved it and may waste a lot of time on a wrong solution.
+
+Plan
+
+Pseudocode
+Pseudocode is writing out the logic for your program in natural language instead of code. 
+
+Divide and conquer
+From your planning, you should have identified some subproblems of the big problem you’re solving. Each of the steps in the algorithm we wrote out in the last section are subproblems. Pick the smallest or simplest one and start there with coding.
+
+

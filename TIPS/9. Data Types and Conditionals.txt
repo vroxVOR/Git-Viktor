@@ -1,0 +1,90 @@
+	Data Types and Conditionals
+
+Handling text — strings in JavaScript
+
+	Declaring strings
+
+const string = "The revolution will not be televised.";
+console.log(string);
+
+const badString = string;
+console.log(badString);
+
+
+	Single quotes, double quotes, and backticks to wrap your strings in.
+
+you can choose single quotes 	(')
+double quotes 			(")
+backticks 			(`) 	
+
+
+	Embedding JavaScript
+
+Inside a template literal, you can wrap JavaScript variables or expressions inside ${ }
+and the result will be included in the string:
+
+const name = "Chris";
+const greeting = `Hello, ${name}`;
+console.log(greeting); =====> "Hello, Chris"
+
+const one = "Hello, ";
+const two = "how are you?";
+const joined = `${one}${two}`;
+console.log(joined); =====> "Hello, how are you?"
+
+
+	Concatenation using "+"
+
+You can use ${} only with template literals, not normal strings. 
+You can concatenate normal strings using the + operator:
+
+const greeting = "Hello";
+const name = "Chris";
+console.log(greeting + ", " + name);  =====>  "Hello, Chris"
+
+const greeting = "Hello";
+const name = "Chris";
+console.log(`${greeting}, ${name}`); // "Hello, Chris"
+
+
+	Including expressions in strings
+
+const song = "Fight the Youth";
+const score = 9;
+const highestScore = 10;
+const output = `I like the song ${song}. I gave it a score of ${
+  (score / highestScore) * 100
+}%.`;
+console.log(output); // "I like the song Fight the Youth. I gave it a score of 90%."
+
+
+	Multiline strings
+
+const newline = `One day you finally knew
+what you had to do, and began,`;
+console.log(newline);
+
+line break characters (\n) in the string:
+
+const newline = "One day you finally knew\nwhat you had to do, and began,";
+console.log(newline);
+
+	Numbers vs. strings
+
+const name = "Front ";
+const number = 242;
+console.log(name + number);  =====>  "Front 242"
+
+		String(): Konvertuje čokoľvek na text (string).	
+
+const myNum = 123; // Toto je číslo
+const myString = String(myNum); // Teraz je to text (string)
+console.log(typeof myString); // Výstup: "string"
+
+	Number(): Konvertuje na číslo. Ak to nie je možné, výstupom je NaN.
+
+const myString = "123"; // Toto je text (string)
+const myNum = Number(myString); // Teraz je to číslo (number)
+console.log(typeof myNum); // Výstup: "number"
+
+

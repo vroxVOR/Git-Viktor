@@ -1,0 +1,34 @@
+Block and Inline
+
+
+Block elements (blokové elementy): 
+display: block;
+Tieto elementy zaberajú celý riadok,takže na stránke sú zobrazené pod sebou.
+Príklady blokových elementov sú <div>, <p>, <h1>, <ul>, a podobne.
+Blokové elementy sa začínajú na novom riadku a vyplnia šírku rodičovského kontajnera.
+
+Inline elements (riadkové elementy):
+display: inline-block;
+Tieto elementy neberú celý riadok a zobrazujú sa vedľa seba. 
+ nvcghbjriadkových elementov sú <span>, <a>, <strong>, a podobne. 
+Inline elementy sa nezlomí na nový riadok a sú zobrazené v rámci textu alebo iného inline elementu.
+
+
+Rozdiel medzi inline a inline-block
+
+inline 
+Elementy s display: inline sa zobrazujú v jednom riadku
+Nepodporujú šírku ani výšku (width, height) – ich rozmery závisia od obsahu
+Okraje a výplne (margin, padding) fungujú iba horizontálne
+
+inline-block
+Kombinuje vlastnosti inline (zobrazuje sa v riadku) a block (podporuje šírku, výšku, okraje).
+Okraje a výplne fungujú horizontálne aj vertikálne.
+
+Prakticke pouzitie 
+inline: 	Keď pracuješ s textom alebo jednoduchými elementmi, ktoré nepotrebujú špecifickú šírku či výšku.
+inline-block: 	Ak chceš element v riadku, ale potrebuješ ho formátovať ako blokový (napr. nastavovať rozmery).
+
+
+Cool citanie
+https://learnlayout.com/no-layout 

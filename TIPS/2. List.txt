@@ -35,3 +35,9 @@ Priklad Kombinacie
         </li>
         <li>Benzin</li>
     </ul>
+
+
+
+ li {
+            list-style-type: none;
+        }

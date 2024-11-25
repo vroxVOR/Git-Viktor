@@ -1,0 +1,32 @@
+Box model
+
+Vsetko v HTML a CSS je box ktory mozme manilupovat pomocou box modelu a ten ma 3 veliciny
+
+padding (vnutro boxu/vypln)Padding posúva obsah dovnútra, čím zväčšuje priestor okolo textu alebo iného obsahu.Zvýšením paddingu sa zvyšuje aj celková veľkosť boxu (ak nepoužívaš border-box).
+padding: 10px; /* Vnútorná výplň rovnaká zo všetkých strán */
+
+border  (ram - Viditeľný obrys okolo obsahu) Rám má vlastnú hrúbku, farbu a štýl.Border zväčšuje celkovú šírku a výšku boxu, pokiaľ nepoužívaš box-sizing: border-box.
+border: 5px solid black; /* Hrubý čierny rám */
+
+
+margin ("vankúše" okolo boxu.) Marginy môžu byť záporné (prvky sa posunú bližšie k sebe) alebo automatické (napr. pri centrovaní prvku).	 
+margin: 20px; /* Rovnaký okraj z každej strany */
+margin: 10px 20px 15px 5px; /* Hore: 10px, vpravo: 20px, dole: 15px, vľavo: 5px */
+
+box-sizing: content-box;
+content-box : šírka a výška sa vzťahujú iba na obsah.
+
+box-sizing: border-box;
+border-box  : šírka a výška zahŕňajú obsah, padding aj border.
+
+
+Margin collapsing
+Ak dva susedné prvky majú vertikálne okraje (margin-top a margin-bottom), môžu sa zlučovať do jedného.
+Výsledný margin nie je súčet, ale väčšia z hodnôt.
+
+auto and centering horizontalne
+Rodičský kontajner (Parent)	: Margin potrebuje rodiča, ktorý definuje voľný priestor (šírku).
+Definovaná šírka dieťaťa (Child): Element, na ktorý aplikuješ margin: auto, musí mať zadanú šírku, aby prehliadač vedel, ako rozložiť voľný priestor.
+
+	margin: 0 auto; /* Vodorovné centrovanie */
+
